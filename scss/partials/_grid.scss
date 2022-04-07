@@ -1,0 +1,37 @@
+.contenedor-index {
+    display: grid;
+    grid-template-columns: 500px 500px auto;
+    grid-template-rows: 500px ;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer"
+;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    background-color:rgba(255, 0, 157, 0.562) ;
+}
+
+nav{
+    grid-area: nav;
+    display: flex;
+    position: sticky;
+}
+
+main{
+    grid-area: main;
+    background-color: crimson;
+    width: 100%;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:rgba(255, 0, 157, 0.562) ;
+}

@@ -69,7 +69,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header-nav {
+  nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -187,7 +187,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  ul {
+  .header-nav ul {
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,16 +226,17 @@
             flex-direction: column;
   }
   .contenedor-index {
+    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .galeria {
     display: -webkit-box;
@@ -254,14 +255,91 @@
   }
 }
 
-/* corresponde a index*/
+.contenedor-index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 500px auto;
+      grid-template-columns: 500px 500px auto;
+  -ms-grid-rows: 500px;
+      grid-template-rows: 500px;
+      grid-template-areas: "header" "nav" "main" "footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255, 0, 157, 0.562);
+}
+
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: main;
+  background-color: crimson;
+  width: 100%;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 0, 157, 0.562);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #3CF0BE;
   margin-left: 10px;
 }
 
-header nav li {
+header .header-nav .logo {
+  height: 80px;
+  width: 80px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+}
+
+header .header-nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-nav ul a {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+
+header .header-nav li {
   padding: 10px;
   margin: 10px;
   border: solid 2px;
@@ -275,7 +353,6 @@ main {
 }
 
 .contenedor-index {
-  height: 400px;
   background-color: crimson;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -287,7 +364,7 @@ main {
       justify-content: space-around;
 }
 
-.section1 {
+.contenedor-index .section1 {
   height: 250px;
   width: 400px;
   background-color: rgba(255, 0, 157, 0.562);
@@ -299,7 +376,13 @@ main {
           flex-direction: column;
 }
 
-.section2 {
+.contenedor-index .section1 .cajita-img {
+  height: 100%;
+  width: 100%;
+  border: solid black;
+}
+
+.contenedor-index .section2 {
   height: 250px;
   width: 400px;
   background-color: rgba(255, 0, 157, 0.562);
@@ -312,29 +395,6 @@ main {
   display: table;
 }
 
-.cajita-img {
-  height: 100%;
-  width: 100%;
-  border: solid black;
-}
-
-ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-a {
-  text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  padding: 10px;
-}
-
 li:hover {
   background-color: white;
 }
@@ -343,26 +403,7 @@ footer {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.logo {
-  height: 80px;
-  width: 80px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-left: 10px;
-}
-
-/*aqui comienza la seccion informacion*/
-.cajita-info {
-  height: 450px;
-  width: 80%;
-  background-color: rgba(255, 0, 157, 0.562);
-  border: solid black;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-}
-
-.container {
+main .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,6 +419,16 @@ footer {
           flex-direction: column;
 }
 
+main .cajita-info {
+  height: 450px;
+  width: 80%;
+  background-color: rgba(255, 0, 157, 0.562);
+  border: solid black;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
 .logo {
   height: 80px;
   width: 80px;
@@ -386,28 +437,44 @@ footer {
   margin-left: 10px;
 }
 
-/*aqui comienza la seccion galeria*/
+.iconos-img {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+}
+
 .logo {
   height: 80px;
   width: 80px;
   margin-top: 8px;
   margin-bottom: 8px;
   margin-left: 10px;
+}
+
+.cajita-img {
+  height: 100%;
+  width: 100%;
+  border: solid black;
 }
 
 h1 h2 h3 {
   text-align: center;
 }
 
-/* aqui comienza la seccion ubicacion*/
-.sucursal-1 {
+.iconos-img {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+}
+
+main .container-ubicacion .sucursal-1 {
   width: 420px;
   font-weight: bold;
   background-color: rgba(255, 0, 157, 0.562);
   border: 3px solid black;
 }
 
-.sucursal-2 {
+main .container-ubicacion .sucursal-2 {
   width: 420px;
   font-weight: bold;
   background-color: rgba(255, 0, 157, 0.562);
@@ -415,7 +482,7 @@ h1 h2 h3 {
   margin-top: 10px;
 }
 
-.sucursal-3 {
+main .container-ubicacion .sucursal-3 {
   width: 420px;
   font-weight: bold;
   background-color: rgba(255, 0, 157, 0.562);
@@ -448,7 +515,36 @@ li:hover {
   margin-left: 10px;
 }
 
-/*aqui comienza la seccion contacto*/
+.iconos-img {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+}
+
+.main-contacto .caja-mail {
+  height: 55px;
+  width: 300px;
+  background-color: rgba(255, 0, 157, 0.562);
+  border: solid black;
+  margin-bottom: 10px;
+}
+
+.main-contacto .caja-telefono {
+  height: 50px;
+  width: 220px;
+  background-color: rgba(255, 0, 157, 0.562);
+  border: solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-contacto .caja-redes {
+  width: 200px;
+  background-color: rgba(255, 0, 157, 0.562);
+  border: solid black;
+  margin-top: 10px;
+}
+
 .caja-mail {
   height: 55px;
   width: 300px;
@@ -516,7 +612,6 @@ p {
   padding: 5px;
 }
 
-/*animaciones*/
 footer {
   width: 100vw;
   -webkit-animation-name: MiAnimacion;

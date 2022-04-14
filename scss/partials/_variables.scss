@@ -1,0 +1,31 @@
+$primary-color: #3CF0BE;
+$secondary-color: crimson;
+$cajitas-color: rgba(255, 0, 157, 0.562);
+
+@mixin estiloSection () {
+    height: 250px;
+    width: 400px;
+    background-color: $cajitas-color;
+    border: 3px solid black;
+    text-align: center;
+    flex-direction: column;
+}
+
+@mixin estiloFormularios ($width) {
+    height: 30px;
+    width: $width;
+    background-color:$cajitas-color ;
+    border: solid black;
+    margin-top: 10px;
+}
+
+@mixin flexin($display, $justify-content, $align-items) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+$margin: (
+    m-bottom: 10px,
+    m-top: 10px,
+);

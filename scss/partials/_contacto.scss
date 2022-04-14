@@ -1,0 +1,57 @@
+.main-contacto{
+    .caja-mail{
+        height: 55px;
+        width: 300px;
+        background-color: $cajitas-color;
+        border: solid black;
+        margin-bottom: map-get($margin, m-bottom );
+    }
+
+    .caja-telefono{
+        height: 50px;
+        width: 220px;
+        background-color:$cajitas-color ;
+        border: solid black;
+        margin-top: map-get($margin , m-top );
+        margin-bottom: map-get($margin, m-bottom );
+    }
+
+    .caja-redes{
+        width: 200px;
+        background-color: $cajitas-color;
+        border: solid black;
+        margin-top:map-get($margin , m-top );
+    }
+}
+
+.caja-form1{
+    display: flex inline;
+    @include estiloFormularios(370px);
+}
+
+.caja-form2{
+    @include estiloFormularios(370px);
+}
+
+.caja-form3{
+    @include estiloFormularios(375px);
+}
+
+.iconos-img{
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+} 
+
+.logo{
+    height: 80px;
+    width: 80px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+p{
+    padding: 5px;
+    color: white;
+}

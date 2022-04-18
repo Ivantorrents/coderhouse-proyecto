@@ -2,9 +2,11 @@ $primary-color: #3CF0BE;
 $secondary-color: crimson;
 $cajitas-color: rgba(255, 0, 157, 0.562);
 
+
 @mixin estiloSection () {
     height: 250px;
     width: 400px;
+    padding: 15px;
     background-color: $cajitas-color;
     border: 3px solid black;
     text-align: center;

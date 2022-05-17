@@ -5,48 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="informacion acerca del evento principal">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="./styles.scss">
     <title> Superentradas ~ Informacion </title>
 </head>
 <body>
-    <header>
-        <nav class="header-nav">
-            <div>
-                <a href="/index.html"></a>
-                <img class="logo" src="../images-desafio/logo-png.png" alt="logo de la empresa">
-            </div>
-             <ul>
-                 <li> <a href="../index.html"> inicio </a> </li>
-                 <li> <a href="/views/informacion.html"> informacion </a> </li>
-                 <li> <a href="/views/galeria.html"> galeria </a> </li>
-                 <li> <a href="/views/ubicacion.html"> ubicacion </a> </li>
-                 <li> <a href="/views/contacto.html"> contacto </a> </li>
-             </ul>
-        </nav>
-    </header>
+  <header>
+    <div>
+      <a href="/index.html"></a>
+      <img class="logo" src="../images-desafio/logo-png.png" alt="logo de la empresa">
+  </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">SuperEntradas</a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <p class="txt-menu">MENU</p>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/informacion.html">Informacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/views/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
         <div class="container">
         <div class="cajita-info">
             <h3>Acerca de nosotros</h3>
             <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod error fuga doloribus possimus voluptatum tenetur esse illo asperiores porro eos corrupti, architecto quae, repudiandae ad officia sapiente sequi impedit perspiciatis rerum minima ipsam amet laboriosam? Maiores ullam, asperiores expedita assumenda deserunt inventore? Vero modi magni reprehenderit aperiam deserunt officiis nisi quo molestiae eligendi, repellat enim illum distinctio odit, labore accusantium autem voluptas dolorum, sed aliquam incidunt sapiente rem placeat adipisci. Quam aliquid, molestiae perferendis voluptates
+                Somos una empresa de venta de tickets que trabaja para hacer de la compra de entradas una experiencia sencilla, segura, práctica y placentera. Los consumidores esperan de nosotros no solo un ticket, sino también información sobre temas de su interés, beneficios, servicios y espacios de participación.
+                Integramos un grupo internacional vinculado a todo tipo de eventos y espectáculos: música, deportes, teatro, exposiciones y presentaciones de todo tipo.
+                Entendemos el sector porque somos parte de él. Nos preparamos para ofrecer servicios diferenciados, en beneficio de Productores, Artistas, Patrocinadores y Público.
+                Invertimos tiempo y recursos en una búsqueda incansable de procesos y vínculos cada vez más amigables, con un nivel de disponibilidad siempre creciente, en entornos seguros. Estamos atentos a las nuevas tecnologías pero especialmente a las nuevas formas de relaciones sociales.        
+                Llegamos para innovar.
             </p>
         </div>
-        <div class="cajita-info">
+        <div class="cajita-info2">
             <h3>Como comprar tu entrada</h3>
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, molestias. Vel, porro. Quas tempore, quibusdam nostrum repellendus error, mollitia dolores numquam iste beatae, illo ullam maiores fugit. Ducimus fugit officia et possimus ea iusto praesentium sequi iure ratione harum. Quo minima fuga quisquam ipsam autem deserunt soluta veniam ex sed, nisi consequuntur iure, eligendi quam ab, eum inventore nostrum pariatur cumque vero sunt hic nemo. Dignissimos illum eaque harum repellendus libero ipsum error quod qui maiores suscipit delectus officia dolores nulla, officiis inventore corrupti architecto modi obcaecati.
+                Primero debes registrarte con un usuario/mail y contraseña, accede con estos datos y continua a seleccionar los tickets elegidos, por último completá el proceso de compra con tu tarjeta y disfrutá el show!
             </p>
         </div>
         </div>
     </main>
     <footer>
-        <p> Creado por Ivan Torrents </p>
-        <p> Redes sociales </p>
-        <img class="iconos-img" src="../images-desafio/icono-face.png" alt="icono de facebook"><img class="iconos-img" src="../images-desafio/icono-ig.png" alt="icono de instagram"><img class="iconos-img" src="../images-desafio/icono-wpp.png" alt="icono de whatsapp">
-    </footer>
+        <div class="footer-style">
+          <p> Creado por Ivan Torrents </p>
+          <p> Redes sociales </p>
+          <div class="caja-logos">
+            <img id="iconos-img" src="/images-desafio/icono-face.png" alt="icono de facebook"><img id="iconos-img" src="/images-desafio/icono-ig.png" alt="icono de instagram"><img id="iconos-img" src="/images-desafio/icono-wpp.png" alt="icono de whatsapp">
+          </div>
+        </div>
+      </footer>
 
-    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

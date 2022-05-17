@@ -15,9 +15,3 @@ header{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-
-@keyframes MiAnimacion {
-    0%{background-color: $primary-color;}
-    50%{background-color: $cajitas-color;}
-    100%{background-color: blueviolet;}
-}

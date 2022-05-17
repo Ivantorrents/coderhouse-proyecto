@@ -8,11 +8,18 @@
 
 .cajita-img{
     height: 100%;
-    width: 100%;
+    width: 80%;
     border: solid black;
 }
 
 
-h1 h2 h3{
+h1 , h2, h3{
+    text-align: center;
+    background-color: cyan;
+    margin-top: 10px;
+}
+
+.galeria{
     text-align: center;
 }
+

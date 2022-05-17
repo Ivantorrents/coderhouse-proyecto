@@ -1,7 +1,7 @@
 @media screen and (max-width: 500px) {
-        
+
     .contenedor-index{
-        max-width: 100%;
+        min-width: 80%;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -10,7 +10,6 @@
     }
 
     .container{
-        width: 80vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,6 +36,11 @@
         flex-direction: column;
     }
 
+    .navbar-brand{
+        align-items:flex-end;
+        padding-top: 20px;
+    }
+
     nav{
         display: flex;
         justify-content: center;
@@ -58,6 +62,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        width: 80%;
     }
 
     .section2{
@@ -65,6 +70,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        width: 80%;
     }
 
     .galeria{
@@ -72,6 +78,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .footer-index p {
@@ -86,17 +93,21 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-
+        flex-wrap: wrap;
     }
 
+    
+    .sucursal-1{
+        width: 80%;
+    }
 }
     
     @media screen and (max-width: 768px) {
-    .header-nav{
-        max-width: 100%;
+    header{
         display: flex;
         align-items: center;
         flex-direction: column;
+
 
         ul{
             width: 100vw;
@@ -106,6 +117,13 @@
         }
     }
 
+    body {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .lista{
         max-width: 100%;
         display: flex;
@@ -113,24 +131,29 @@
         align-items: center;
     }
 
-    .logo{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
     .contenedor-index{
         width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+        align-content: center;
+    }
+
+    .navbar-brand{
+        align-items:flex-end;
+        padding-top: 20px;
     }
 
     .galeria{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: center;
+        align-items: normal;
+        text-align: center;
+    }
+
+    .sucursal-1{
+        width: 80%;
     }
 
     }

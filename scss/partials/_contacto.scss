@@ -19,7 +19,6 @@
     .caja-redes{
         width: 200px;
         background-color: $cajitas-color;
-        border: solid black;
         margin-top:map-get($margin , m-top );
     }
 }
@@ -47,5 +46,40 @@
 
 p{
     padding: 5px;
-    color: white;
+    color: black;
+    background-color: transparent;
+}
+
+#texto-contacto{
+    background-color: white;
+}
+
+#texto-contacto1{
+    font-weight: bold;
+    background-color: white;
+}
+
+.contenedor-contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.form-bootstrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-4{
+    width: auto;
+}
+
+.form-label{
+    background-color: white;
+}
+
+.mb-3{
+    margin-top: 5px;
 }

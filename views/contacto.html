@@ -12,32 +12,56 @@
 </head>
 <body>
     <header>
-        <nav class="header-nav">
-            <div>
-                <a href="/index.html"></a>
-                <img class="logo" src="../images-desafio/logo-png.png" alt="logo de la empresa">
+        <div>
+          <a href="/index.html"></a>
+          <img class="logo" src="../images-desafio/logo-png.png" alt="logo de la empresa">
+      </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">SuperEntradas</a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <p class="txt-menu">MENU</p>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/views/informacion.html">Informacion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/views/galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/views/ubicacion.html">Ubicacion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/views/contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
-            <ul class="lista">
-                <li> <a href="../index.html"> inicio </a> </li>
-                <li> <a href="/views/informacion.html"> informacion </a> </li>
-                <li> <a href="/views/galeria.html"> galeria </a> </li>
-                <li> <a href="/views/ubicacion.html"> ubicacion </a> </li>
-                <li> <a href="/views/contacto.html"> contacto </a> </li>
-            </ul>
-        </nav>   
-    </header>
+          </div>
+        </nav>
+      </header>
     <main class="main-contacto">
-       <div>
-        <p> Para consultas generales: </p>
+       <div class="contenedor-contacto">
+        <p id="texto-contacto1"> Para consultas generales: </p>
             <div class="caja-mail">
-        <p> Via Email: superentradas@gmail.com </p>
+        <p id="texto-contacto"> Via Email: superentradas@gmail.com </p>
             </div>
         <div class="caja-telefono">
-            <p> telefono: 0800-756-1200 </p>
+            <p id="texto-contacto"> telefono: 0800-756-1200 </p>
         </div>   
             <div class="caja-redes">
-        <p> seguinos en nuestras redes sociales </p>
-        <img class="iconos-img" src="../images-desafio/icono-face.png" alt="icono de facebook"><img class="iconos-img" src="../images-desafio/icono-ig.png" alt="icono de instagram"><img class="iconos-img" src="../images-desafio/icono-wpp.png" alt="icono de whatsapp">
+        <p id="texto-contacto"> seguinos en nuestras redes sociales </p>
+        <img id="iconos-img" src="../images-desafio/icono-face.png" alt="icono de facebook"><img id="iconos-img" src="../images-desafio/icono-ig.png" alt="icono de instagram"><img id="iconos-img" src="../images-desafio/icono-wpp.png" alt="icono de whatsapp">
         </div>
     </div>
 
@@ -65,10 +89,15 @@
             
     </main>
     <footer>
-        <p> Creado por Ivan Torrents </p>
-        <p> Redes sociales </p>
-        <img class="iconos-img" src="../images-desafio/icono-face.png" alt="icono de facebook"><img class="iconos-img" src="../images-desafio/icono-ig.png" alt="icono de instagram"><img class="iconos-img" src="../images-desafio/icono-wpp.png" alt="icono de whatsapp">
-    </footer>
+        <div class="footer-style">
+          <p> Creado por Ivan Torrents </p>
+          <p> Redes sociales </p>
+          <div class="caja-logos">
+            <div class="caja-logos">
+              <img id="iconos-img" src="/images-desafio/icono-face.png" alt="icono de facebook"><img id="iconos-img" src="/images-desafio/icono-ig.png" alt="icono de instagram"><img id="iconos-img" src="/images-desafio/icono-wpp.png" alt="icono de whatsapp">
+          </div>
+        </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
